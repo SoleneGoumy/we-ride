@@ -10,9 +10,9 @@ import {
 } from "../utils/wind.utils";
 import WindSpeed from "./WindSpeed";
 
-const pioupiouApiUrlCNA = "http://api.pioupiou.fr/v1/live/1527";
+const pioupiouApiUrlCNA = "https://api.pioupiou.fr/v1/live/1527";
 // url for the balloon station if CNA is down, but the data is not as good as CNA
-const pioupiouApiUrlBalloon = "http://api.pioupiou.fr/v1/live/163";
+const pioupiouApiUrlBalloon = "https://api.pioupiou.fr/v1/live/163";
 
 const fetchWindData = async (): Promise<WindData> => {
 	const res = await fetch(pioupiouApiUrlBalloon);
